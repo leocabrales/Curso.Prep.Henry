@@ -135,15 +135,17 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if (numero % 15 === 0 ) {
+    return  ('fizzbuzz')
+  }
+  
   if (numero % 3 === 0) {
     return  ('fizz')
   }
   if (numero % 5 === 0) {
     return  ('buzz')
   }
-  if (numero % 3 === 0 && numero % 5 === 0) {
-    return  ('fizzbuzz')
-  }
+ 
   else{
     return numero
   }
@@ -232,7 +234,16 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var a = numero;
+  var i = 0;
+    do {
+      i = i + 1;
+      a = a + 5;
+    }
+    while(i < 8);
+      return a;
 
+      
 }
 
 
